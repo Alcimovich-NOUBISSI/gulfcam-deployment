@@ -9,6 +9,6 @@ entries:
     name: gulfcam-frontend-chart
     type: application
     urls:
-    - https://alcimovich-noubissi.github.io/gulfcam-frontend-chart/gulfcam-frontend-chart-0.1.0.tgz
+    - https://alcimovich-noubissi.github.io/gulfcam-frontend-chart-0.1.0.tgz
     version: 0.1.0
 generated: "2024-02-23T17:57:56.037073553+01:00"
