@@ -3,7 +3,7 @@ entries:
   gulfcam-frontend-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-02-24T20:44:05.083991443+01:00"
+    created: "2024-02-24T22:50:24.971857872+01:00"
     description: A Helm chart for Kubernetes
     digest: 4c599bb1fddcf1d08ef2d16690083d2d10bfa748bee573ec6247ee87199f2c1a
     name: gulfcam-frontend-chart
@@ -11,4 +11,4 @@ entries:
     urls:
     - gulfcam-frontend-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2024-02-24T20:44:05.082627191+01:00"
+generated: "2024-02-24T22:50:24.971048759+01:00"
