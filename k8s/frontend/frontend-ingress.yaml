@@ -1,0 +1,22 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: front-end-ingress
+  labels:
+    name: front-end-ingress
+spec:
+  tls: 
+  - hosts:
+      - gulfcam.com
+    secretName: front-end-secret
+  rules:
+  - host: gulfcam.com
+    http:
+        paths:
+        - pathType: Prefix
+          path: "/"
+          backend:
+            service:
+              name: front-end-service
+              port: 
+                number: 80
