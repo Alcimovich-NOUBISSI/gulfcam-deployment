@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: front-end
 spec:
-  replicas: 5
+  replicas: 3
   strategy: 
     type: RollingUpdate
     rollingUpdate:
@@ -17,7 +17,7 @@ spec:
       labels:
         app: front-end-deployment
     spec: 
-      affinity: 
+      # affinity: 
         # nodeAffinity:
         #   requiredDuringSchedulingIgnoredDuringExecution:
         #     nodeSelectorTerms:
