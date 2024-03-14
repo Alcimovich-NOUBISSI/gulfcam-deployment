@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: backend-deployment
+  name: {{ .Values.name }}
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: backend-deployment
+      app: {{ .Values.name }}
   template:
     metadata:
-      labels:
-        app: backend-deployment
+      labels: 
+        app: {{ .Values.name }}
     spec:
       containers:
-      - name: backend-deployment
-        image: registry.gitlab.com/afrikpay1/gulfcam-backend:k8s-5
+      - name: {{ .Values.name }}
+        image: {{ .Values.image }}: {{- .Values.tag }}
         resources:
           limits:
             memory: "128Mi"
@@ -26,16 +26,15 @@ spec:
       - name: backend-docker-secret
 
 ---
-
 apiVersion: v1
 kind: Service
 metadata:
-  name: backend-service
+  name: {{ .Values.service.name }}
 spec:
   type: NodePort
   selector:
-    app: backend-deployment
+    app: {{ .Values.name }}
   ports:
-  - port: 1000
+  - port: 8080
     targetPort: backend-port
-    nodePort: 30004
+    nodePort: {{ .Values.service.nodePort }}
