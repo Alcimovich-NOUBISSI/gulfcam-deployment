@@ -3,28 +3,18 @@ entries:
   gulfcam-backend-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-03-23T12:51:11.395414214+01:00"
+    created: "2024-03-23T13:21:28.059661847+01:00"
     description: Backend Helm Chart
-    digest: 4388cb251eb5de3b9f41ee68ea6508a394ed45c680bb08de5124623f2f33943a
+    digest: 5904af0958a6ded2426b70a81727523e654fc0cf5c3b28f8094b9750d0b0fc22
     name: gulfcam-backend-chart
     type: application
     urls:
     - gulfcam-backend-chart-0.1.3.tgz
     version: 0.1.3
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2024-03-14T16:16:05.797900952+01:00"
-    description: Backend Helm Chart
-    digest: f8ca586b3c5bb222aadf31885ecc7f1b2b47dbc9c7acd182bab87d5c5d478b8b
-    name: gulfcam-backend-chart
-    type: application
-    urls:
-    - gulfcam-backend-chart-0.1.2.tgz
-    version: 0.1.2
   gulfcam-frontend-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-03-23T12:51:11.411761284+01:00"
+    created: "2024-03-23T13:21:28.060467723+01:00"
     description: Frontend Helm Chart
     digest: f634583f52772edc56b6c87ba7d0edfe9d193d1ff7a42e2ebdd94cf49cb3a246
     name: gulfcam-frontend-chart
@@ -32,4 +22,4 @@ entries:
     urls:
     - gulfcam-frontend-chart-0.1.1.tgz
     version: 0.1.1
-generated: "2024-03-23T12:51:11.394669495+01:00"
+generated: "2024-03-23T13:21:28.058787891+01:00"
