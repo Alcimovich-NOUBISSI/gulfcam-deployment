@@ -17,8 +17,8 @@ spec:
         image: {{ .Values.image }}: {{- .Values.tag }}
         resources:
           limits:
-            memory: "128Mi"
-            cpu: "216m"
+            memory: {{ .Values.limits.memory }}
+            cpu: {{ .Values.limits.cpu }}
         ports:
         - containerPort: 8080
           name: backend-port

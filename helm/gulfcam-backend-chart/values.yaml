@@ -12,6 +12,10 @@ service:
 secret:
   dockerConfigFile: ewoJImF1dGhzIjogewoJCSJyZWdpc3RyeS5naXRsYWIuY29tIjogewoJCQkiYXV0aCI6ICJZV1p5YVd0d1lYbGZaM0p2ZFhBNloyeHdZWFF0VjNoeWNtUmFaalphV1U1aU1YRTRVMHhJVUhjPSIKCQl9Cgl9Cn0=
 
+limits:   
+  memory: "1000Mi"
+  cpu: "700m"
+
 ingress:
   name: backend-ingress
   hosts: 
