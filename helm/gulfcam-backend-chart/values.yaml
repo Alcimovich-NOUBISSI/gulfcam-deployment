@@ -9,6 +9,9 @@ service:
   name: "backend-service"
   nodePort: 30002
 
+secret:
+  dockerConfigFile: ewoJImF1dGhzIjogewoJCSJyZWdpc3RyeS5naXRsYWIuY29tIjogewoJCQkiYXV0aCI6ICJZV1p5YVd0d1lYbGZaM0p2ZFhBNloyeHdZWFF0VjNoeWNtUmFaalphV1U1aU1YRTRVMHhJVUhjPSIKCQl9Cgl9Cn0=
+
 ingress:
   name: backend-ingress
   hosts: 
